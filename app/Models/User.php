@@ -40,4 +40,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function fav_art_pieces()
+    {
+
+        return $this->belongsToMany(ArtPiece::class, 'user_fav_art_pieces', 'user_id', 'art_piece_id',);
+    }
 }
