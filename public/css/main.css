@@ -37,7 +37,6 @@
   .content-wrapper {
     padding-right: 0 !important;
     padding-left: 0 !important;
-    margin-bottom: 4.5rem;
     margin-left: 16.5%;
   }
 }
@@ -49,7 +48,7 @@
 /* Carousel base class
 -------------------------------------------------- */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -76,7 +75,7 @@
 -------------------------------------------------- */
 @media (max-width: 992px) {
   .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 40em) {

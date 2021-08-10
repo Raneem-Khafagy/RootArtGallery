@@ -20,6 +20,7 @@
                     @guest
                     @if (Route::has('login')||Route::has('register'))
                     <li class="nav-item">
+
                         <a class="nav-link @yield('active_login')" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
 
@@ -29,10 +30,9 @@
                     @endif
                     @else
                     <li class="nav-item ">
-                        <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
+                        <a class="nav-link " href="{{route('home')}}" role="button">
+                            {{ Auth::user()->name.__("'s Home")}}
+                        </a></span>
 
                     </li>
                     @endguest
