@@ -1,3 +1,4 @@
+@import "../variables";
 .nav-link:hover {
     transition: all 0.4s;
 }
@@ -25,8 +26,8 @@
 @media (min-width: 992px) {
     .sidenav {
         position: absolute;
-        width: var(--sidebar-width) !important;
-        height: calc(100vh - 3.5rem) !important;
+        width: $sidebar-width;
+        height: calc(100vh - 3.5rem);
         margin-top: 3.5rem;
     }
 
@@ -38,6 +39,13 @@
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-bottom: 4.5rem;
-        margin-left: var(--sidebar-width);
+        margin-left: $sidebar-width;
     }
+}
+
+@media (max-width: 992px) {
+
+        #app-box-model {
+            padding-top: 3.5rem;
+        }
 }
