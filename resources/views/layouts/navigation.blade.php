@@ -18,25 +18,25 @@
 
                 <ul class=" navbar-nav sidenav col-lg-2">
                     @guest
-                    @if (Route::has('login'))
+                    @if (Route::has('login')||Route::has('register'))
                     <li class="nav-item">
                         <a class="nav-link @yield('active_login')" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
-                    @elseif (Route::has('register'))
+
                     <li class="nav-item @yield('active_register')">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="nav-link " href="{{ route('register') }}">{{ __('Register') }}</a>
                     </li>
                     @endif
                     @else
                     <li class="nav-item ">
-                        <a class="nav-link " href="#" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
                         </a>
 
                     </li>
                     @endguest
-
+                    @auth
                     <li class="nav-item @yield('active_about')">
                         <a class="nav-link" href="{{route('about')}}">About</a>
                     </li>
@@ -44,20 +44,20 @@
                         <a class="nav-link @yield('active_Contact')" href="{{route('contact')}}">Contact
                         </a>
                     </li>
-                    @auth
+
                     <li class="nav-item ">
                         <a class="nav-link @yield('active_Favourites')" href="{{route('favourites')}}">Favourites
                         </a>
                     </li>
                     <li class="nav-item d-md-sm-xs-none">
-                    <a class="nav-link d-md-sm-xs-none" href onclick="event.preventDefault();
+                        <a class="nav-link d-md-sm-xs-none" href onclick="event.preventDefault();
                             document.getElementById('logout-form').submit()">Logout
-                        <span class="sr-only"></span>
-                    </a>
-                    <form method="POST" id="logout-form" action="{{route('logout')}}">
-                        @csrf
-                    </form>
-                </li>
+                            <span class="sr-only"></span>
+                        </a>
+                        <form method="POST" id="logout-form" action="{{route('logout')}}">
+                            @csrf
+                        </form>
+                    </li>
                     @endauth
                     @yield('extra_links')
                 </ul>
@@ -70,6 +70,4 @@
         </div>
 
     </div>
-
-
 </nav>
