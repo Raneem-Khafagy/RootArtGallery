@@ -1,5 +1,7 @@
-@extends('layouts.auth')
-
+@extends('layouts.app')
+@section('active_login')
+active
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -52,11 +54,13 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn  btn-dark">
                                     {{ __('Login') }}
                                 </button>
+                                <a class="btn  btn-dark" href="{{ route('register') }}" role="button">create an account</a>
                             </div>
+
                         </div>
                     </form>
                 </div>
