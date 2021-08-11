@@ -21,5 +21,8 @@ active
 @endcomponent
 </div>
 {{-- end carousel --}}
-
+@endsection
+@section('footer')
+@component('layouts.footer1')
+@endcomponent
 @endsection

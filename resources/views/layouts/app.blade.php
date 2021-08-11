@@ -21,15 +21,15 @@
 <body>
 <div id='app-box-model'class='content-wrapper'>
     {{--Navigation bar--}}
-    @include('layouts.Navigation')
+    @include('layouts.navigation')
     <main>
     {{-- fixed in structure but variable content --}}
         @yield('content')
     </main>
-    {{--Footer bar showes only if authanticated--}}
-    @auth
-        @include('layouts.Footer')
-    @endauth
+    {{--Footer --}}
+
+    @yield('footer')
+
 
 </div>
 </body>
