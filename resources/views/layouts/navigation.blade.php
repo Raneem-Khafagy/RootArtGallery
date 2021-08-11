@@ -23,20 +23,20 @@
 
                         <a class="nav-link @yield('active_login')" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
-
+                    @elseif (Route::has('register'))
                     <li class="nav-item @yield('active_register')">
                         <a class="nav-link " href="{{ route('register') }}">{{ __('Register') }}</a>
                     </li>
                     @endif
                     @else
-                    <li class="nav-item ">
+                    <li class="nav-item @yield('active_home')">
                         <a class="nav-link " href="{{route('home')}}" role="button">
                             {{ Auth::user()->name.__("'s Home")}}
                         </a></span>
 
                     </li>
                     @endguest
-                    @auth
+
                     <li class="nav-item @yield('active_about')">
                         <a class="nav-link" href="{{route('about')}}">About</a>
                     </li>
@@ -49,6 +49,7 @@
                         <a class="nav-link @yield('active_Favourites')" href="{{route('favourites')}}">Favourites
                         </a>
                     </li>
+                    @auth
                     <li class="nav-item d-md-sm-xs-none">
                         <a class="nav-link d-md-sm-xs-none" href onclick="event.preventDefault();
                             document.getElementById('logout-form').submit()">Logout
