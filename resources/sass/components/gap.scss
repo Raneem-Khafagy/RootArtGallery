@@ -1,0 +1,13 @@
+.gap100 {
+    padding: 70px 0px;
+    margin: auto;
+    display: block;
+}
+
+#gap {
+    background-repeat: no-repeat;
+    background-image: var(--gap-image);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+}

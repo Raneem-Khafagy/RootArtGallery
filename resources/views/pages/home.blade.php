@@ -9,13 +9,13 @@ active
 {{-- Carousel --}}
 @component('components.carousel')
 @slot('first_slide')
-{{asset('storage/rev-home-image-1.jpg')}}
+{{asset('storage/home-image-1.jpg')}}
 @endslot
 @slot('second_slide')
-{{asset('storage/rev-home-image-2.jpg')}}
+{{asset('storage/home-image-2.jpg')}}
 @endslot
 @slot('third_slide')
-{{asset('storage/rev-home-image-3.jpg')}}
+{{asset('storage/home-image-3.jpg')}}
 @endslot
 @endcomponent
 {{-- end carousel --}}

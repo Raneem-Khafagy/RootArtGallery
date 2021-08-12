@@ -267,6 +267,20 @@
   text-decoration: none;
 }
 
+.gap100 {
+  padding: 70px 0px;
+  margin: auto;
+  display: block;
+}
+
+#gap {
+  background-repeat: no-repeat;
+  background-image: var(--gap-image);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
 #about-text h1,
 #about-text p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
