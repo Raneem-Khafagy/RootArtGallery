@@ -17,7 +17,7 @@ active
 <section id="gap">
     <div class="container-custom-margen">
         <div class="container gap100">
-            {{-- <img src="{{asset('storage/logo/contact.png')}}" alt="logo"> --}}
+            <x-form />
         </div>
     </div>
 </section>
