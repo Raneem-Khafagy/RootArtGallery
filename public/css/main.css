@@ -260,11 +260,19 @@
   background-color: black;
   color: #fff;
   text-decoration: none;
+  border-width: 0px;
+  border-color: transparent;
+  box-shadow: none;
+  border-style: none;
 }
 .hover-btn:hover {
   background-color: #fff;
   color: black;
   text-decoration: none;
+  border-width: 0px;
+  border-color: transparent;
+  box-shadow: none;
+  border-style: none;
 }
 
 .gap100 {
