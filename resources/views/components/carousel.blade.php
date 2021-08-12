@@ -14,7 +14,7 @@
                     <p class="d-none d-md-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
                         elit non mi porta gravida
                         at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-dark" href="#"role="button">Contact us</a></p>
+                    <p><a class="btn-lg hover-btn" href="#"role="button">Contact us</a></p>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                     <p class="d-none d-md-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
                         elit non mi porta gravida
                         at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-dark" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn-lg hover-btn" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     <p class="d-none d-md-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
                         elit non mi porta gravida
                         at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-dark" href="#" role="button">Browse gallery</a></p>
+                    <p><a class="btn-lg hover-btn" href="#" role="button">Browse gallery</a></p>
                 </div>
             </div>
         </div>

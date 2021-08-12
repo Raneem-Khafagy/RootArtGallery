@@ -256,6 +256,17 @@
     font-weight: 600;
   }
 }
+.hover-btn {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+}
+.hover-btn:hover {
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+}
+
 #about-text h1,
 #about-text p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
