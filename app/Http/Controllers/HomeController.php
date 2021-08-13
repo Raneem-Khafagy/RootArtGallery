@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\ArtPiece;
 
 class HomeController extends Controller
 {
@@ -26,7 +28,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages/home');
+        $categories = Category::all();
+        $artpieces = ArtPiece::inRandomOrder()->limit(8)->get();
+        return view('pages/home', compact('categories', 'artpieces'));
     }
     public function about()
     {
@@ -39,5 +43,13 @@ class HomeController extends Controller
     public function favourites()
     {
         return view('pages/favitems');
+    }
+
+    //PASSING "category"  from the MODEL "Category"
+    public function category(Category $category)
+    {
+        //PASSING "art_pieces" data related to the MODEL "Category"
+        $data = $category->art_pieces()->paginate();
+        return view('pages/category-items', compact('category', 'data'));
     }
 }

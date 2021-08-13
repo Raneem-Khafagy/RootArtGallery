@@ -21,3 +21,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/favourites', [HomeController::class, 'favourites'])->name('favourites');
+
+//PASSING "category" var with the route
+Route::get('category/{category}', [HomeController::class, 'category'])->name('category');
