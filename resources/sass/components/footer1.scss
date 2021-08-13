@@ -42,7 +42,7 @@
 }
 
 .footer-links a {
-    color: #737373
+    color: #737373 !important;
 }
 
 .footer-links a:active,
@@ -162,4 +162,8 @@
         margin-right: 0;
         font-weight: 600
     }
+}
+///////////footer2/////////////////////////
+.f2-copyright-text a {
+    color: white;
 }

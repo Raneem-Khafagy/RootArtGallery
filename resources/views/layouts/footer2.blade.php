@@ -96,7 +96,7 @@
         <hr>
         <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text"> &copy; Raneem_Khafagy| find me @ <a
+                <p class="f2-copyright-text "> &copy; Raneem_Khafagy| find me @ <a
                         href="https://www.upwork.com/freelancers/~01068772bd94230130">upwork</a>
                 </p>
 
