@@ -23,6 +23,20 @@ active
 <x-categories :categories="$categories" ></x-categories>
 {{-- end Categories --}}
 
+<div id="category-card">
+    <div class=" category-header">
+        <h5 class="display-2 d-flex justify-content-center">Root Gallery</h5>
+        <h4 class=" d-flex justify-content-center">Browse Works To enjoy</h4>
+    </div>
+    <div class="row top-buffer">
+        @foreach($artpieces as $item )
+        <x-art-piece-mini :item="$item" method="POST" route="art-piece.fav" text="Add to favourits" />
+        @endforeach
+
+
+
+    </div>
+</div>
 
 
 <h1>ghkasdcvashcvasvcghas</h1>

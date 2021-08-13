@@ -1,3 +1,7 @@
+.top-buffer {
+  margin-top: 20px;
+}
+
 .nav-link:hover {
   transition: all 0.4s;
 }
@@ -395,6 +399,20 @@
      object-position: left;
 }
 
+/* category-card CONTENT
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #category-card {
+    margin-bottom: 4rem;
+    margin-right: 4rem !important;
+    margin-left: 4rem !important;
+  }
+}
+/*------------------------------------------------
+--------------------------------------------------
+-------------------------------------------------- */
+/* categories CONTENT
+-------------------------------------------------- */
 #categories {
   margin-right: 1em;
   margin-left: 1em;
@@ -453,4 +471,17 @@
 }
 #categories .fadeIn-bottom {
   top: 80%;
+}
+
+.category-header {
+  margin: 2% 0px;
+}
+
+h2.display-4 {
+  font-weight: initial;
+}
+@media (min-width: 1200px) {
+  h2.display-4 {
+    font-size: 1.2vw;
+  }
 }

@@ -24,3 +24,5 @@ Route::get('/favourites', [HomeController::class, 'favourites'])->name('favourit
 
 //PASSING "category" var with the route
 Route::get('category/{category}', [HomeController::class, 'category'])->name('category');
+//PASSING "ArtPiecies" var with the route
+Route::get('/art-piece/{art_piece}', [HomeController::class, 'art_piece'])->name('art-piece');

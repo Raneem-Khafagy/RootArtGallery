@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $artpieces = ArtPiece::inRandomOrder()->limit(8)->get();
+        $artpieces = ArtPiece::inRandomOrder()->limit(4)->get();
         return view('pages/home', compact('categories', 'artpieces'));
     }
     public function about()
@@ -51,5 +51,13 @@ class HomeController extends Controller
         //PASSING "art_pieces" data related to the MODEL "Category"
         $data = $category->art_pieces()->paginate();
         return view('pages/category-items', compact('category', 'data'));
+    }
+
+    public function art_piece(ArtPiece $art_piece)
+    {
+        $category = $art_piece->categories()->get()[0];
+        //related artpiecies
+        $data = $category->art_pieces()->paginate(3);
+        return view('ArtPieceInfo', compact("art_piece", "data", "category"));
     }
 }
