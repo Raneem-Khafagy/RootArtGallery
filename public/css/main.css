@@ -289,66 +289,6 @@
   min-height: 500px;
 }
 
-#categories {
-  margin-right: 1em;
-  margin-left: 1em;
-}
-#categories .category {
-  position: relative;
-  margin-bottom: 1em;
-  overflow: hidden;
-}
-#categories .category .category-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
-}
-#categories .category:hover .category-overlay {
-  opacity: 1;
-}
-#categories .category-image {
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-#categories img {
-  box-shadow: 1px 1px 5px 1px rgba(145, 139, 139, 0.03);
-}
-#categories .category-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out 0s;
-}
-#categories .category:hover .category-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-#categories .category-details h3 {
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-#categories .fadeIn-bottom {
-  top: 80%;
-}
-
 #about-text h1,
 #about-text p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -453,4 +393,64 @@
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+}
+
+#categories {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+#categories .category {
+  position: relative;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+#categories .category .category-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+#categories .category:hover .category-overlay {
+  opacity: 1;
+}
+#categories .category-image {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+#categories img {
+  box-shadow: 1px 1px 5px 1px rgba(145, 139, 139, 0.03);
+}
+#categories .category-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+#categories .category:hover .category-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+#categories .category-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+#categories .fadeIn-bottom {
+  top: 80%;
 }
