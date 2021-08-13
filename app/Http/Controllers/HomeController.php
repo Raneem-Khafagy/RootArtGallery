@@ -58,6 +58,6 @@ class HomeController extends Controller
         $category = $art_piece->categories()->get()[0];
         //related artpiecies
         $data = $category->art_pieces()->paginate(3);
-        return view('ArtPieceInfo', compact("art_piece", "data", "category"));
+        return view('pages/art-piece-info', compact("art_piece", "data", "category"));
     }
 }

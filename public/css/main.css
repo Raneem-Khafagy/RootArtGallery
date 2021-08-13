@@ -2,6 +2,10 @@
   margin-top: 20px;
 }
 
+.container-custom-margen {
+  margin: 4rem;
+}
+
 .nav-link:hover {
   transition: all 0.4s;
 }
@@ -143,7 +147,7 @@
 }
 
 .footer-links a {
-  color: #737373;
+  color: #737373 !important;
 }
 
 .footer-links a:active,
@@ -260,6 +264,10 @@
     font-weight: 600;
   }
 }
+.f2-copyright-text a {
+  color: white;
+}
+
 .hover-btn {
   background-color: black;
   color: #fff;

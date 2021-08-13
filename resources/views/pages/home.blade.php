@@ -20,7 +20,7 @@ active
 @endcomponent
 {{-- end carousel --}}
 {{-- Categories --}}
-<x-categories :categories="$categories" ></x-categories>
+<x-categories :categories="$categories"></x-categories>
 {{-- end Categories --}}
 
 <div id="category-card">
@@ -30,7 +30,20 @@ active
     </div>
     <div class="row top-buffer">
         @foreach($artpieces as $item )
-        <x-art-piece-mini :item="$item" method="POST" route="art-piece.fav" text="Add to favourits" />
+        @foreach ($item->categories as $category)
+        <div class="col-xl-3 col-lg-6 col-md-6 p-2 ">
+            <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>
+
+                <x-art-piece-mini :item="$item" method="POST" route="art-piece.fav" text="Add to favourits" />
+
+                <form action="{{route('category',$category->id)}}">
+                    <button type="submit" class="btn btn-link">{{$category ->name}}</button>
+                </form>
+
+            </div>
+        </div>
+        @break
+        @endforeach
         @endforeach
 
 
@@ -40,7 +53,8 @@ active
 
 
 <h1>ghkasdcvashcvasvcghas</h1>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sint ipsa sequi inventore quas aperiam culpa odio, modi eius dolore veritatis ratione facilis dicta fuga eos ullam iure distinctio magni.lorem </p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sint ipsa sequi inventore quas aperiam culpa odio,
+    modi eius dolore veritatis ratione facilis dicta fuga eos ullam iure distinctio magni.lorem </p>
 @endsection
 @section('footer')
 @component('layouts.footer2')
