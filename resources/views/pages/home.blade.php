@@ -23,6 +23,19 @@ active
 <x-categories :categories="$categories"></x-categories>
 {{-- end Categories --}}
 
+<section id="gap">
+    <div class="container-custom-margen">
+        <div class="container gap100">
+             <img src="{{asset('storage/logo/contact.png')}}" alt="logo" class="img-responsive">
+        </div>
+    </div>
+</section>
+{{-- Changes gap-section background image --}}
+@php
+$background=asset('storage/gap/gap-1.jpg');
+@endphp
+
+{{-- Random Art Pieces --}}
 <div id="category-card">
     <div class=" category-header">
         <h5 class="display-2 d-flex justify-content-center">Root Gallery</h5>
@@ -50,13 +63,20 @@ active
 
     </div>
 </div>
-
-
-<h1>ghkasdcvashcvasvcghas</h1>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sint ipsa sequi inventore quas aperiam culpa odio,
-    modi eius dolore veritatis ratione facilis dicta fuga eos ullam iure distinctio magni.lorem </p>
+{{-- end Random Art Pieces --}}
 @endsection
+
 @section('footer')
 @component('layouts.footer2')
 @endcomponent
+@endsection
+
+@section('extra_scripts')
+{{-- Changes gap-section background image --}}
+<script>
+    let root = document.documentElement;
+
+    root.style.setProperty('--gap-image', "url({{$background}})");
+
+</script>
 @endsection

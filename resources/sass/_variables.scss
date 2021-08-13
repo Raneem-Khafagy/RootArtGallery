@@ -5,3 +5,8 @@ $sidebar-width: 16.5%;
 .container-custom-margen {
     margin: 4rem;
 }
+.img-responsive {
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+    width: 100%;
+}

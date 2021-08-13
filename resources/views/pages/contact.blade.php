@@ -9,10 +9,26 @@ active
 
 @section('content')
 {{-- Header picture --}}
- <img src="{{asset('storage/contact.jpg')}}" width=100%>
+<img src="{{asset('storage/contact.jpg')}}">
 {{-- end Header picture --}}
-<h1>ghkasdcvashcvasvcghas</h1>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sint ipsa sequi inventore quas aperiam culpa odio, modi eius dolore veritatis ratione facilis dicta fuga eos ullam iure distinctio magni.lorem </p>
+<div class="container top-buffer">
+    <x-feature route="{{asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
+    <hr class="featurette-divider">
+    @component('components.feature')
+    @slot('route')
+    {{asset('storage/feature-2.jpg')}}
+    @endslot
+    @slot('text')
+    Second
+    @endslot
+    @slot('class1')
+    order-md-2
+    @endslot
+    @slot('class2')
+    order-md-1
+    @endslot
+    @endcomponent
+</div>
 
 <section id="gap">
     <div class="container-custom-margen">
@@ -20,15 +36,16 @@ active
             <x-form />
         </div>
     </div>
+
 </section>
 {{-- Changes gap-section background image --}}
 @php
-$background=asset('storage/gap/gap-1.jpg');
+$background=asset('storage/gap/gap-2.jpg');
 @endphp
 
 @endsection
 @section('footer')
-@component('layouts.footer2')
+@component('layouts.footer1')
 @endcomponent
 @endsection
 
@@ -45,4 +62,3 @@ $background=asset('storage/gap/gap-1.jpg');
 
 </script>
 @endsection
-

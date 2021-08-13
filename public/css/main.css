@@ -6,6 +6,12 @@
   margin: 4rem;
 }
 
+.img-responsive {
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  width: 100%;
+}
+
 .nav-link:hover {
   transition: all 0.4s;
 }
