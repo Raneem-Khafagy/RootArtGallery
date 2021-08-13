@@ -66,29 +66,6 @@
 
                 </div>
             </div>
-
-            {{-- //////////////////////////////// --}}
-
-            {{-- <div class="col-lg-6 col-md-6 col-sm-12">
-        <p class="title_blogs_footer">OUR TEAM</p>
-        <div class="d-flex flex-column pt-4">
-            <div class="row h-100">
-                <div class="col-3 px-0">
-                    <img class="img-fluid py-1p" src="{{asset('storage/team/team-1.jpg')}}" alt="" />
-            <img class="img-fluid py-1p" src="{{asset('storage/team/team-2.jpg')}}" alt="" />
-
-        </div>
-        <div class="col-3 px-0">
-            <img class="img-fluid py-1p" src="{{asset('storage/team/team-3.jpg')}}" alt="" />
-            <img class="img-fluid py-1p" src="{{asset('storage/team/team-4.jpg')}}" alt="" />
-
-        </div>
-
-
-    </div>
-    </div>
-
-    </div> --}}
     </div>
     </div>
 
@@ -104,9 +81,9 @@
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="social-icons">
-                    <li><a class="facebook " href="#"><i class=" bi-facebook"></i></a></li>
-                    <li><a class="github" href="#"><i class="bi bi-github"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>
+                     <li><a class="facebook " href="https://www.facebook.com/profile.php?id=100007644077272"><i class=" bi-facebook"></i></a></li>
+                      <li><a class="github" href="https://github.com/Raneem-Khafagy/"><i class="bi bi-github"></i></a></li>
+                      <li><a class="linkedin" href="https://www.linkedin.com/in/raneem-khafagy/"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>

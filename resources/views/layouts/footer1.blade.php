@@ -39,9 +39,9 @@
 
               <div class="col-md-4 col-sm-6 col-xs-12">
                   <ul class="social-icons">
-                      <li><a class="facebook " href="#"><i class=" bi-facebook"></i></a></li>
-                      <li><a class="github" href="#"><i class="bi bi-github"></i></a></li>
-                      <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>
+                      <li><a class="facebook " href="https://www.facebook.com/profile.php?id=100007644077272"><i class=" bi-facebook"></i></a></li>
+                      <li><a class="github" href="https://github.com/Raneem-Khafagy/"><i class="bi bi-github"></i></a></li>
+                      <li><a class="linkedin" href="https://www.linkedin.com/in/raneem-khafagy/"><i class="bi bi-linkedin"></i></a></li>
                   </ul>
               </div>
           </div>
