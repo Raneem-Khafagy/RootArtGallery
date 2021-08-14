@@ -9,13 +9,13 @@ active
 {{-- Carousel --}}
 @component('components.carousel')
 @slot('first_slide')
-{{secure_asset('storage/home-image-1.jpg')}}
+{{asset('storage/home-image-1.jpg')}}
 @endslot
 @slot('second_slide')
-{{secure_asset('storage/home-image-2.jpg')}}
+{{asset('storage/home-image-2.jpg')}}
 @endslot
 @slot('third_slide')
-{{secure_asset('storage/home-image-3.jpg')}}
+{{asset('storage/home-image-3.jpg')}}
 @endslot
 @endcomponent
 {{-- end carousel --}}
@@ -26,13 +26,13 @@ active
 <section id="gap">
     <div class="container-custom-margen">
         <div class="container gap100">
-             <img src="{{secure_asset('storage/logo/contact.png')}}" alt="logo" class="img-responsive">
+             <img src="{{asset('storage/logo/contact.png')}}" alt="logo" class="img-responsive">
         </div>
     </div>
 </section>
 {{-- Changes gap-section background image --}}
 @php
-$background=secure_asset('storage/gap/gap-1.jpg');
+$background=asset('storage/gap/gap-1.jpg');
 @endphp
 
 {{-- Random Art Pieces --}}
