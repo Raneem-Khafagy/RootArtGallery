@@ -22,6 +22,6 @@ active
 </div>
 @endsection
 @section('footer')
-@component('layouts.footer1')
+@component('layouts.footer2')
 @endcomponent
 @endsection
