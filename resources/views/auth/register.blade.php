@@ -7,7 +7,7 @@ active
     <div class="row justify-content-center">
         <div class="login-section-wrapper">
             <div class="brand-wrapper">
-                <img src="{{asset('storage/logo/contact.png')}}" alt="logo" class="logo">
+                <img src="{{secure_asset('storage/logo/contact.png')}}" alt="logo" class="logo">
             </div>
             <div class="login-wrapper">
                 <h1 class="login-title">{{ __('Register') }}</h1>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top col-lg-2  bg-light">
     <a class="navbar-brand  d-lg-none d-xl-none" href="#">
-        <img src="{{asset('storage/logo/logo.png')}}" width="100" class="d-inline-block align-top" alt="">
+        <img src="{{secure_asset('storage/logo/logo.png')}}" width="100" class="d-inline-block align-top" alt="">
     </a>
 
 
@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-lg-2">
                 <a class="d-none d-lg-block d-xl-block " href="#">
-                    <img src="{{asset('storage/logo/logo.png')}}" width="100" class="d-inline-block align-top" alt="">
+                    <img src="{{secure_asset('storage/logo/logo.png')}}" width="100" class="d-inline-block align-top" alt="">
                 </a>
 
                 <ul class=" navbar-nav sidenav col-lg-2">

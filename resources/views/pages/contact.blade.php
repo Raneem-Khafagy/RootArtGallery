@@ -9,14 +9,14 @@ active
 
 @section('content')
 {{-- Header picture --}}
-<img src="{{asset('storage/contact.jpg')}}">
+<img src="{{secure_asset('storage/contact.jpg')}}">
 {{-- end Header picture --}}
 <div class="container top-buffer">
-    <x-feature route="{{asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
+    <x-feature route="{{secure_asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
     <hr class="featurette-divider">
     @component('components.feature')
     @slot('route')
-    {{asset('storage/feature-2.jpg')}}
+    {{secure_asset('storage/feature-2.jpg')}}
     @endslot
     @slot('text')
     Second
@@ -40,7 +40,7 @@ active
 </section>
 {{-- Changes gap-section background image --}}
 @php
-$background=asset('storage/gap/gap-2.jpg');
+$background=secure_asset('storage/gap/gap-2.jpg');
 @endphp
 
 @endsection

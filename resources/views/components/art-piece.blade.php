@@ -1,6 +1,6 @@
 
 <div class="col-lg-md-6 col-md-6">
-    <img src="{{asset($item ->image)}}" class="d-flex justify-content-center img-responsive"  alt="art-piece">
+    <img src="{{secure_asset($item ->image)}}" class="d-flex justify-content-center img-responsive"  alt="art-piece">
   </div>
   <div class="col-lg-6 col-md-6">
 

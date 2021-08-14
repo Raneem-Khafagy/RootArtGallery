@@ -3,7 +3,7 @@
         <div class="row ">
             <div class=" col-lg-6 col-md-6 col-sm-12">
                 <div class="mb-4 col-lg-3 col-md-3 col-sm-3">
-                    <img class="category-image" src="{{asset('storage/logo/footer-logo.png')}}"
+                    <img class="category-image" src="{{secure_asset('storage/logo/footer-logo.png')}}"
                         class="d-inline-block align-top">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -43,7 +43,7 @@
                 <div class="d-flex flex-column justify-content-start">
                     <div class="row py-4">
                         <div class="col-5">
-                            <img class="img-fluid" src="{{asset('storage/team/team-2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('storage/team/team-2.jpg')}}" alt="">
                         </div>
                         <div class="col-7 d-flex justify-content-center  align-items-center px-0">
                             <div class="">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="row py-4">
                         <div class="col-5">
-                            <img class="img-fluid" src="{{asset('storage/team/team-3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('storage/team/team-3.jpg')}}" alt="">
                         </div>
                         <div class="col-7 d-flex justify-content-center  align-items-center px-0">
                             <div class="">
