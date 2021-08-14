@@ -1,5 +1,5 @@
 <a href="{{route('art-piece',$item)}}">
-    <img class="" src="{{asset($item ->image)}}" alt="Generic placeholder image" width="100%">
+    <img class="" src="{{secure_asset($item ->image)}}" alt="Generic placeholder image" width="100%">
 </a>
 <h2 class="display-4">{{$item->name}}</h2>
 @auth
