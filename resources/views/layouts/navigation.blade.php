@@ -44,12 +44,12 @@
                         <a class="nav-link @yield('active_Contact')" href="{{route('contact')}}">Contact
                         </a>
                     </li>
-
+                    @auth
                     <li class="nav-item ">
                         <a class="nav-link @yield('active_Favourites')" href="{{route('favourites')}}">Favourites
                         </a>
                     </li>
-                    @auth
+
                     <li class="nav-item d-md-sm-xs-none">
                         <a class="nav-link d-md-sm-xs-none" href onclick="event.preventDefault();
                             document.getElementById('logout-form').submit()">Logout
