@@ -31,3 +31,7 @@ Route::post('/art-piece/{art_piece}/favs', [FavsController::class, 'store'])->na
 Route::delete('/art-piece/{art_piece}/unfav', [FavsController::class, 'destroy'])->name('art-piece.unfav');
 Route::get('/favourites', [FavsController::class, 'index'])->name('favourites');
 Route::post('/favourites', [FavsController::class, 'index'])->name('favourites');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
