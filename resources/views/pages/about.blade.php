@@ -10,13 +10,13 @@ active
 <div id="about-text">
     @component('components.carousel')
     @slot('first_slide')
-    {{secure_asset('storage/about-image-1.jpg')}}
+    {{asset('storage/about-image-1.jpg')}}
     @endslot
     @slot('second_slide')
-    {{secure_asset('storage/about-image-2.jpg')}}
+    {{asset('storage/about-image-2.jpg')}}
     @endslot
     @slot('third_slide')
-    {{secure_asset('storage/about-image-3.jpg')}}
+    {{asset('storage/about-image-3.jpg')}}
     @endslot
     @endcomponent
 </div>
@@ -30,7 +30,7 @@ active
         </div>
 
         <div class="col-md-5">
-            <img src={{secure_asset('storage/about.jpg')}}
+            <img src={{asset('storage/about.jpg')}}
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                 height="500">
         </div>
