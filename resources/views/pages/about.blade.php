@@ -45,7 +45,8 @@ active
         <h5 class="display-2 d-flex justify-content-center">Our Team</h5>
     </div>
     <div class="row top-buffer">
-        @for ($x = 1; $x <= 4; $x++) <div class="col-xl-3 col-lg-6 col-md-6 p-2 ">
+
+        @for ($x = 1; $x <= 4; $x++) <div class="col-xl-3 col-lg-6 col-md-6">
             <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>
                 <img class="" src="storage/team/team-{{$x}}.jpg" alt="team member" width="100%">
 
