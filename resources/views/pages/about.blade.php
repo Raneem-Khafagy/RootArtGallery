@@ -44,7 +44,7 @@ active
         <h4 class=" d-flex justify-content-center">People Behing Idea</h4>
         <h5 class="display-2 d-flex justify-content-center">Our Team</h5>
     </div>
-    <div class="row top-buffer">
+    <div class="container top-buffer">
 
         @for ($x = 1; $x <= 4; $x++) <div class="col-xl-3 col-lg-6 col-md-6">
             <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>

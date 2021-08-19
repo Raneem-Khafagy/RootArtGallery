@@ -9,7 +9,7 @@ active
 
 @section('content')
 {{-- Header picture --}}
-<img src="{{asset('storage/contact.jpg')}}">
+<img class="img-responsive" src="{{asset('storage/contact.jpg')}}">
 {{-- end Header picture --}}
 <div class="container top-buffer">
     <x-feature route="{{asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
