@@ -12,22 +12,24 @@ active
 <img class="img-responsive" src="{{asset('storage/contact.jpg')}}">
 {{-- end Header picture --}}
 <div class="container top-buffer">
-    <x-feature route="{{asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
-    <hr class="featurette-divider">
-    @component('components.feature')
-    @slot('route')
-    {{asset('storage/feature-2.jpg')}}
-    @endslot
-    @slot('text')
-    Second
-    @endslot
-    @slot('class1')
-    order-md-2
-    @endslot
-    @slot('class2')
-    order-md-1
-    @endslot
-    @endcomponent
+    <div class="row">
+        <x-feature route="{{asset('storage/feature-1.jpg')}}" text="First" class1=" " class2=" " />
+        <hr class="featurette-divider">
+        @component('components.feature')
+        @slot('route')
+        {{asset('storage/feature-2.jpg')}}
+        @endslot
+        @slot('text')
+        Second
+        @endslot
+        @slot('class1')
+        order-md-2
+        @endslot
+        @slot('class2')
+        order-md-1
+        @endslot
+        @endcomponent
+    </div>
 </div>
 
 <section id="gap">

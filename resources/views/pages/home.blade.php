@@ -26,7 +26,7 @@ active
 <section id="gap">
     <div class="container-custom-margen">
         <div class="container gap100">
-             <img src="{{asset('storage/logo/contact.png')}}" alt="logo" class="img-responsive">
+            <img src="{{asset('storage/logo/contact.png')}}" alt="logo" class="img-responsive">
         </div>
     </div>
 </section>
@@ -41,26 +41,28 @@ $background=asset('storage/gap/gap-1.jpg');
         <h5 class="display-2 d-flex justify-content-center">Root Gallery</h5>
         <h4 class=" d-flex justify-content-center">Browse Works To enjoy</h4>
     </div>
-    <div class="row top-buffer">
-        @foreach($artpieces as $item )
-        @foreach ($item->categories as $category)
-        <div class="col-xl-3 col-lg-6 col-md-6 p-2 ">
-            <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>
+    <div class="container top-buffer">
+        <div class="row">
+            @foreach($artpieces as $item )
+            @foreach ($item->categories as $category)
+            <div class="col-xl-3 col-lg-6 col-md-6 p-2 ">
+                <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>
 
-                <x-art-piece-mini :item="$item" method="POST" route="art-piece.fav" text="Add to favourites" />
+                    <x-art-piece-mini :item="$item" method="POST" route="art-piece.fav" text="Add to favourites" />
 
-                <form action="{{route('category',$category->id)}}">
-                    <button type="submit" class="btn btn-link">{{$category ->name}}</button>
-                </form>
+                    <form action="{{route('category',$category->id)}}">
+                        <button type="submit" class="btn btn-link">{{$category ->name}}</button>
+                    </form>
 
+                </div>
             </div>
+            @break
+            @endforeach
+            @endforeach
+
+
+
         </div>
-        @break
-        @endforeach
-        @endforeach
-
-
-
     </div>
 </div>
 {{-- end Random Art Pieces --}}
