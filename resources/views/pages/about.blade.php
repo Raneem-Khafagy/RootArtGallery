@@ -47,8 +47,8 @@ active
     <div class="container top-buffer">
         <div class="row">
             @for ($x = 1; $x <= 4; $x++) <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="d-flex justify-content-between align-items-center  flex-column" id='art-piece-mini'>
-                    <img class="" src="storage/team/team-{{$x}}.jpg" alt="team member" width="100%">
+                <div class="d-flex justify-content-between align-items-center  flex-column"  >
+                    <img class="img-responsive" src="storage/team/team-{{$x}}.jpg" alt="team member">
 
                 </div>
         </div>
