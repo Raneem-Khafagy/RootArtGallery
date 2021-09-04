@@ -46,19 +46,22 @@ active
     </div>
     <div class="container top-buffer">
         <div class="row">
-            @for ($x = 1; $x <= 4; $x++) <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="d-flex justify-content-between align-items-center  flex-column"  >
-                    <img class="img-responsive" src="storage/team/team-{{$x}}.jpg" alt="team member">
+            @for ($x = 1; $x <= 4; $x++)
+            <div class="col-xl-3 col-lg-6 col-md-6m p-2">
+                <div class="d-flex justify-content-between align-items-center  flex-column">
+                    <img class="" src="storage/team/team-{{$x}}.jpg" alt="team member" width="100%">
 
                 </div>
+            </div>
+            @endfor
         </div>
     </div>
-    @endfor
-</div>
+
+
 </div>
 {{-- end Team members --}}
 @endsection
 @section('footer')
-@component('layouts.footer1')
+@component('layouts.footer2')
 @endcomponent
 @endsection
